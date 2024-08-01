@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>London Weather</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-engine" action="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder=" Enter your city"
+            name="city"
+            required
+            id="searching"
+          />
+          <input type="submit" class="submit-input" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div class="current-city">
+            <h1>London</h1>
+            <p class="city-info">
+              <span id="current-day"></span>, moderate rain
+            </p>
+            <p>
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+
+          <h4>
+            <span class="emoji">☀️</span
+            ><span class="current-temp-value">14°</span
+            ><span class="degrees">C</span>
+          </h4>
+        </div>
+        <ul class="daily">
+          <li>
+            Sun ⛅ <br />
+            <strong>14°C</strong> - 18°C
+          </li>
+          <li>
+            Mon ⛅ <br />
+            <strong> 14°C </strong> - 18°C
+          </li>
+          <li>
+            Tue ⛅ <br />
+            <strong> 14°C </strong> - 18°C
+          </li>
+          <li>
+            Wed ⛅ <br />
+            <strong> 14°C </strong> - 18°C
+          </li>
+          <li>
+            Thur ⛅ <br />
+            <strong> 14°C </strong> - 18°C
+          </li>
+        </ul>
+      </main>
+      <footer>
+        Coded by
+        <a
+          href="https://earth.google.com/web/@0,-0.50680005,0a,22251752.77375655d,35y,0h,0t,0r"
+          target="_blank"
+          >Alex Nedelcut</a
+        >
+        and is <a href="https://github.com/" target="_blank">on GitHub</a> and
+        <a href="https://app.netlify.com/signup-questions" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
